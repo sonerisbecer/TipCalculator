@@ -202,6 +202,7 @@ class _MyFormState extends State<MyForm> {
             ]
             
           ),
+          
           SizedBox(height: 20),
           TextFormField(
             controller: _surnameController,
@@ -266,7 +267,6 @@ Future<void> getDataFromAPI() async {
 
     // Yerel JSON dosyasını oku
     File localFile = File(localJsonPath);
-    String localData = await localFile.readAsString();
     print('Yerel JSON dosyası okundu.');
 
     // Uzak API'den veri al
